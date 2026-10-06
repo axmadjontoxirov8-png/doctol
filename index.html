@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DocTool — Работа с документами</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        Doc<span>Tool</span>
+    </div>
+
+    <nav>
+        <a href="#tools">Инструменты</a>
+        <a href="#about">О сервисе</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="badge">
+            ⚡ Быстро · Бесплатно · Приватно
+        </div>
+
+        <h1>
+            Работа с документами
+            <span>проще</span>
+        </h1>
+
+        <p>
+            Конвертируйте, объединяйте и редактируйте
+            документы прямо в браузере.
+        </p>
+
+    </section>
+
+
+    <!-- IMAGE TO PDF -->
+
+    <section class="converter">
+
+        <div class="converter-title">
+
+            <div class="title-icon">
+                🖼️
+            </div>
+
+            <div>
+                <h2>Изображения в PDF</h2>
+
+                <p>
+                    JPG и PNG файлы можно объединить
+                    в один PDF
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="dropzone" id="dropzone">
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/jpeg,image/png"
+                multiple
+            >
+
+            <div class="upload-icon">
+                ↑
+            </div>
+
+            <h3>
+                Перетащите изображения сюда
+            </h3>
+
+            <p>
+                или
+                <span>выберите файлы</span>
+            </p>
+
+            <small>
+                Поддерживаются JPG и PNG
+            </small>
+
+        </div>
+
+
+        <!-- FILE LIST -->
+
+        <div
+            class="file-section"
+            id="fileSection"
+            style="display: none;"
+        >
+
+            <div class="file-header">
+
+                <h3>
+                    Файлы
+                    (<span id="fileCount">0</span>)
+                </h3>
+
+                <button
+                    class="clear"
+                    id="clearButton"
+                >
+                    Очистить
+                </button>
+
+            </div>
+
+
+            <div
+                class="file-list"
+                id="fileList"
+            ></div>
+
+        </div>
+
+
+        <!-- CONVERT BUTTON -->
+
+        <button
+            class="convert-button"
+            id="convertButton"
+            disabled
+        >
+            Создать PDF
+            <span>→</span>
+        </button>
+
+
+        <div class="privacy">
+            🔒 Файлы обрабатываются прямо в вашем браузере
+        </div>
+
+    </section>
+
+
+    <!-- TOOLS -->
+
+    <section
+        class="tools"
+        id="tools"
+    >
+
+        <div class="section-heading">
+
+            <p>ИНСТРУМЕНТЫ</p>
+
+            <h2>
+                Всё необходимое
+                <br>
+                для работы с PDF
+            </h2>
+
+        </div>
+
+
+        <div class="tool-grid">
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    🔗
+                </div>
+
+                <h3>
+                    Объединить PDF
+                </h3>
+
+                <p>
+                    Соедините несколько PDF-файлов
+                    в один документ.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    ✂️
+                </div>
+
+                <h3>
+                    Разделить PDF
+                </h3>
+
+                <p>
+                    Разделите большой документ
+                    на отдельные файлы.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    🗜️
+                </div>
+
+                <h3>
+                    Сжать PDF
+                </h3>
+
+                <p>
+                    Уменьшите размер документа
+                    для удобной отправки.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    🔄
+                </div>
+
+                <h3>
+                    Повернуть PDF
+                </h3>
+
+                <p>
+                    Измените ориентацию страниц
+                    документа.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    🗑️
+                </div>
+
+                <h3>
+                    Удалить страницы
+                </h3>
+
+                <p>
+                    Удалите ненужные страницы
+                    из PDF.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <div class="tool-icon">
+                    📄
+                </div>
+
+                <h3>
+                    PDF → JPG
+                </h3>
+
+                <p>
+                    Превратите страницы PDF
+                    в изображения.
+                </p>
+
+                <button>
+                    Скоро →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section
+        class="about"
+        id="about"
+    >
+
+        <div>
+
+            <span>01</span>
+
+            <h3>
+                Без загрузки файлов
+            </h3>
+
+            <p>
+                Документы обрабатываются
+                непосредственно на вашем устройстве.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>02</span>
+
+            <h3>
+                Простой интерфейс
+            </h3>
+
+            <p>
+                Никаких сложных настроек.
+                Выберите файл и получите результат.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>03</span>
+
+            <h3>
+                Бесплатно
+            </h3>
+
+            <p>
+                Основные инструменты доступны
+                бесплатно.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="logo">
+        Doc<span>Tool</span>
+    </div>
+
+    <p>
+        Простые инструменты для работы с документами.
+    </p>
+
+    <span>
+        © 2026 DocTool
+    </span>
+
+</footer>
+
+
+<!-- jsPDF -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
